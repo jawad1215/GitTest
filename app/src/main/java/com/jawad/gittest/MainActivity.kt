@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun inCrement() {
-        increment += 2
+        increment += 4
         textView?.setText(increment.toString())
 
     }
