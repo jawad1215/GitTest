@@ -15,16 +15,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         button=findViewById(R.id.button)
         textView=findViewById(R.id.textView)
+        val reset=findViewById<Button>(R.id.reset)
         button.setOnClickListener { inCrement() }
+        reset.setOnClickListener { resetCounter() }
     }
+
+
 
     private fun inCrement() {
-        increment += 4
-        textView?.setText(increment.toString())
+        increment += 1
+        textView?.text=increment.toString()
 
     }
 
-    override fun onResume() {
-        super.onResume()
+    private fun resetCounter() {
+        increment=0
+        textView?.text=increment.toString()
     }
+
+
+
 }
