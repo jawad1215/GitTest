@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Git Test</string>
     <string name="click_me">Click Me!</string>
-    <string name="reset">Reset</string>
 </resources>
